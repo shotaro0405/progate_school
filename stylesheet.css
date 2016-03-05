@@ -111,7 +111,7 @@ header{
 }
 
 .top-section h2{
-  padding-top:170;
+  padding-top:170px;
   color:#f3f3f3;
   font-size:48px;
 }
@@ -460,7 +460,7 @@ header{
   border:1px solid #24282e;
   color:#c9d1d6;
   position:relative;
-  right:520;
+  right:520px;
 }
 
 /*お問い合わせ*/
