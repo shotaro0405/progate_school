@@ -1,3 +1,582 @@
-h1 {
-    color: #07b496;
+/*-------  ここから共通のCSS（変更不要）  --------*/
+body {
+  margin: 0;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  color: #888;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #323A45;
+  transition: all .3s;
+}
+
+a:hover {
+  color: #0dc0c0;
+}
+
+h2, h3, h4, h5, h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+h4, h5 {
+  color: #444;
+  font-size: 18px;
+}
+
+.container {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*-------  ここまで共通のCSS（変更不要） --------*/
+
+/*------- ここからCSSを書き始めてください --------*/
+/*------- ヘッダー要素 --------*/
+header{
+  border-bottom:solid thin;
+  border-color:#777;
+  background-color:white;
+  width:100%;
+  height:50px;
+  line-height:50px;
+  position:fixed;
+  z-index:5;
+}
+
+.header-logo{
+  color:#777;
+  font-weight:700;
+  font-size:22px;
+  font-family:'Dosis', sans-serif;
+}
+
+.header-left{
+  width:772px;
+  height:50px;
+  float:left;
+  margin-left:15px;
+}
+
+.header-right{
+  float:left;
+  width:400px;
+  height:50px;
+  text-align:right;
+}
+
+.header-right li{
+  font-weight:700;
+  font-size:14px;
+  color:#323A45;
+  padding:10px;
+  display:inline;
+}
+
+/*------- 上部コンテンツ要素 --------*/
+.top-section{
+  text-align:center;
+  height:550px;
+  background-image:url("https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/top.jpg");
+  background-size:cover;
+}
+
+.bg{
+ background-color:rgba(0, 0, 0, 0.6);
+ height:100%;
+}
+
+.heading{
+  width:1200px;
+  height:400px;
+  display:table-cell;
+  vertical-align:middle;
+}
+
+.top-section h2{
+  padding-top:170;
+  color:#f3f3f3;
+  font-size:48px;
+}
+
+.top-section p{
+  color:rgba(255, 255, 255, 0.8);
+  font-size:18px;
+  line-height:30px;
+}
+
+.top-section a{
+  color:#f3f3f3;
+}
+
+.detail{
+  width:150px;
+  height:50px;
+  border:solid thin;
+  margin:0 auto;
+  margin-top:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 20px;
+  font-weight:600;
+  font-size:18px;
+  font-family:'Dosis', sans-serif;
+  cursor:pointer;
+  transition:all .3s;
+}
+
+.btn-pricing{
+  background:#2d323a;
+  border:1px solid #24282e;
+  color:#c9d1d6;
+}
+
+
+/*------- 学習する言語 --------*/
+.bottom{
+  height:600px;
+  position:absolute;
+  float:left;
+}
+
+.bottom h3{
+  text-align:center;
+  color:#555;
+  font-size:32px;
+  font-weight:300;
+  line-height:36px;
+  margin:40px 0;
+}
+
+.item{
+  width:35%;
+  text-align:center;
+  float:left;
+  position:relative;
+  left:180px;
+}
+
+.item h4{
+  color:#444;
+}
+
+.item p{
+  color:#888;
+}
+
+.item-bottom{
+  margin:40px 0;
+}
+
+/*------- 特徴 --------*/
+.feature{
+  width:100%;
+  height:400px;
+  position:relative;
+  top:650px;
+}
+
+.feature img{
+  display:block;
+  margin-top:30px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.characteristic{
+  background-color:#f4f4f4;
+  width:100%;
+  height:380px;
+}
+
+.characteristic h3{
+  color:#555;
+  width:1200px;
+  text-align:center;
+  font-size:32px;
+  font-weight:300;
+  line-height: 36px;
+  margin-top:40px;
+  padding-top:50px;
+}
+
+.characteristic-detail{
+  height:350px;
+  margin-top:60px;
+}
+
+.characteristic-box{
+  height:100px;
+  width:470px;
+  position:relative;
+  left:70px;
+  margin:30px;
+  float:left;
+}
+
+/*------- コースを選ぶ --------*/
+.select-cource{
+  height:900px;
+  margin-top:1070px;
+  background-color:#f4f4f4;
+  text-align:center;
+}
+
+#select-cource-title{
+  color:#555;
+  width:1200px;
+  text-align:center;
+  font-size:32px;
+  font-weight:300;
+  line-height: 36px;
+  padding-top:60px;
+}
+
+.cource{
+  background-color:white;
+  width:330px;
+  height:602px;
+  padding:25px 15px 15px 15px;
+  margin:20px 13px 50px 13px;
+  float:left;
+  position:relative;
+  left:22px;
+}
+.cource-title1{
+  color:white;
+  text-align:center;
+  background-color:#323A45;
+  width:327px;
+  height:48px;
+  padding:30px 0px;
+  margin-top:10px;
+  font-size:20px;
+}
+
+.cource-title2{
+  color:white;
+  text-align:center;
+  background-color:#0DC0C0;
+  width:327px;
+  height:48px;
+  padding:30px 0px;
+  margin-top:10px;
+  font-size:20px;
+}
+
+.cource-price{
+  width:327px;
+  height:45px;
+  padding:40px 0px;
+  text-align:center;
+  font-size:23px;
+  background-color:#f0f0f0;
+  color:#555;
+}
+
+.cource-detail{
+  text-align:center;
+  width:267px;
+  height:229px;
+  padding:30px;
+}
+
+.cource-detail li{
+  padding:18px 0;
+  border-bottom:1px solid #eee;
+  color:#888;
+  font-size:14px;
+}
+
+.btn2{
+  width:72px;
+  height:27px;
+  padding:10px 20px;
+  margin:20px;
+  background-color:#2d323a;
+  color:#c9d1d6;
+  border:1px solid #24282e;
+  display:inline-block;
+  cursor:pointer;
+  font-weight:600;
+  position:relative;
+  left:90px;
+  top:-50px;
+}
+
+.btn2:hover{
+  color:#e8edef;
+}
+
+/*------- メンター紹介 --------*/
+.mentor-section{
+ text-align:center;
+}
+
+.mentor-title{
+  margin:10px 0;
+  font-size:26px;
+  font-weight:300;
+  line-height:36px;
+  color:#555;
+  padding-top:60px;
+  padding-bottom:10px;
+}
+
+.mentor-box{
+  width:936px;
+  margin:0 auto;
+  padding-bottom:40px;
+}
+
+.mentor-box img{
+  border-radius:50%;
+  width:200px;
+  height:200px;
+}
+
+
+/*------- メッセージエリア --------*/
+.message-section{
+  border:solid;
+  text-align:center;
+  background-image:url('https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/night_view.jpg');
+  background-size:cover;
+}
+
+.message-section h4{
+  height:px;
+  color:white;
+  padding:140px 0;
+  font-size:23px;
+}
+
+.bg2{
+   padding-bottom:10px;
+   background-color:rgba(0, 0, 0, 0.6);
+}
+
+/*コラム*/
+.colum-section{
+  background-color:#f4f4f4;
+  text-align:center;
+  height:1500px;
+}
+
+.colum-section h3{
+  font-size:32px;
+  padding-top:60px;
+  padding-bottom:10px;
+  color:#555;
+}
+
+.filter-item{
+  display:inline-block;
+  font-weight:600;
+  font-size:16px;
+  margin-bottom:40px;
+  font-size:16px;
+  font-family:"Dosis", sans-serif;
+}
+
+.show-all{
+  width:51.438px;
+  height:23px;
+  background-color:#009ca8;
+  color:white;
+  float:left;
+  margin:10px 5px 0 0;
+  padding:8px 16px;
+
+}
+
+.colum{
+  width:48px;
+  height:24px;
+  background-color:white;
+  margin:10px 5px 0 0;
+  padding:8px 16px;
+  color:#323A45;
+  float:left;
+}
+
+.tips{
+  width:138.3px;
+  height:24px;
+  background-color:white;
+  margin:10px 5px 0 0;
+  padding:8px 16px;
+  color:#323A45;
+  float:left;
+}
+
+.article-box img{
+  margin-top:10px;
+  width:468px;
+  height:260px;
+}
+
+.article{
+  background-color:white;
+  width:40%;
+  height:330px;
+  margin:0 15px 30px;
+  padding:7px 7px 27px;
+  float:left;
+  position:relative;
+  left:80px;
+}
+
+.article-text a{
+  display:block;
+  margin-top:17px;
+  color:#444;
+  font-size:17px;
+  font-weight:600;
+}
+
+.load{
+  margin-top:1200px;
+  background-color:#2d323a;
+  border:1px solid #24282e;
+  color:#c9d1d6;
+  position:relative;
+  right:520;
+}
+
+/*お問い合わせ*/
+.form-section{
+  background-image:url('https://s3-ap-northeast-1.amazonaws.com/progate/lesson_images/html/practice/backgrounds/contact.jpg');
+  background-size:cover;
+}
+
+.bg3{
+ background-color:rgba(0, 0, 0, 0.6);
+ height:654px;
+}
+
+.form-title{
+ text-align:center;
+ color:white;
+ height:36px;
+ font-size:28px;
+ font-weight:300;
+ line-height:36px;
+ padding-top:50px;
+ padding-bottom:50px;
+}
+
+.form-section h4{
+  margin-bottom:20px;
+  color:white;
+  font-size:22px;
+}
+
+.contact-form{
+  width:678.5px;
+  margin-left:25px;
+  float:left;
+}
+
+.contact-about{
+  width:468px;
+  float:left;
+}
+
+.contact-about p{
+  color:white;
+  margin-bottom:20px;
+  line-height:24px;
+}
+
+input[type="text"], textarea{
+  vertical-align:middle;
+  background:rgba(250, 250, 250, 0.08);
+  border:none;
+  width:85%;
+  color:white;
+  font-family:'Open Sans', sans-serif;
+  font-size:16px;
+  font-weight:300;
+  border-radius:0;
+  box-shadow:none;
+  margin-bottom:20px;
+  padding:15px;
+}
+
+.btn-contact{
+  font-family:'Dosis', sans-serif;
+  font-size:18px;
+  font-weight:600;
+  background:#0dc0c0;
+  border:1px solid #09b1b9;
+  color:white;
+  box-shadow:inset 0 1px 0 #0fc8c8;
+  text-shadow:0 1px 0 rgba(0, 0, 0, 0.1);
+  transition:all .3s;
+  margin:10px 0;
+  padding:15px 35px;
+}
+
+.fa-map-marker{
+  margin-right:10px;
+}
+
+textarea{
+  height:150px;
+}
+
+/*フッターエリア*/
+.social-section{
+  border:solid;
+  text-align:center;
+
+}
+
+.social-section h3{
+  font-size:32px;
+  padding-top:50px;
+  padding-bottom:20px;
+  color:#323A45;
+}
+
+.follow-us{
+  margin-bottom:50px;
+  color:#323A45;
+}
+
+.social-icon{
+  font-size:36px;
+  line-height:76px;
+  padding:5px;
+  transition:all .3s
+}
+
+footer{
+  border:solid;
+  height:90px;
+  background:#222;
+}
+
+.copyright{
+  margin-top:40px;
 }
