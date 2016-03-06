@@ -1,6 +1,5 @@
 $(function(){
 
-
 //もっと詳しく
   $('#read-more').click(function(){
     var $read = $('#more-text');
@@ -29,6 +28,13 @@ $('.single-item').slick({
   autoplaySpeed:1500,
   dots:true,
   pauseOnHover:true
+});
+
+//コラム画像ホバー機能
+$('.article').hover(function(){
+  $(this).find('img').addClass('zoom-black');
+},function(){
+  $(this).find('img').removeClass('zoom-black');
 });
 
 
