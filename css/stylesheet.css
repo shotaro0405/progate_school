@@ -355,13 +355,21 @@ header{
 .mentor-box{
   width:936px;
   margin:0 auto;
-  padding-bottom:40px;
+  padding-bottom:0px;
 }
 
 .mentor-box img{
+  display: inline-block;
   border-radius:50%;
   width:200px;
   height:200px;
+  margin-left:500px;
+}
+
+.mentor-box h4{
+  width:906px;
+  height:57px;
+  display: inline-block;
 }
 
 
@@ -589,4 +597,10 @@ footer{
 
 .copyright{
   margin-top:40px;
+}
+
+
+/*カルーセル*/
+.carousel{
+  margin-bottom: 30px;
 }
