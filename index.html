@@ -76,6 +76,30 @@
     </div>
   </div>
 
+  <!--土日開発2ヶ月コースモーダル-->
+  <div class="signup-modal-wrapper" id="two-months-modal">
+    <div class="modal">
+      <div class="close-modal">
+        <i class="fa fa-2x fa-times"></i>
+      </div>
+      <div id="login-form">
+        <h2>土日開発2ヶ月コースに申し込む</h2>
+        <form action="#">
+          <select name="cource-select">
+            <option value="土日開発2ヶ月コース">土日開発2ヶ月コース</option>
+            <option value="短期集中2週間コース">短期集中2週間コース</option>
+            <option value="通常1ヶ月コース">通常1ヶ月コース</option>
+          </select>
+          <input class="form-control" type="text" placeholder="氏名">
+          <input class="form-control" type="text" placeholder="メールアドレス">
+          <textarea name="message" placeholder="志望理由" class="form-control"></textarea>
+          <div id="submit-btn">確認画面へ</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
     <!--上部コンテンツ-->
     <div class="top-section">
       <div class="bg">
@@ -157,7 +181,7 @@
             <li>オフィスでの質問：◯</li>
           </ul>
         </div>
-        <div class="btn btn-pricing signup-show">申し込む</div>
+        <div class="btn btn-pricing" id="signup-show">申し込む</div>
       </div>
 
       <div class="cource cource2">
@@ -174,7 +198,7 @@
             <li>オフィスでの質問：◯</li>
           </ul>
         </div>
-        <div class="btn btn-pricing">申し込む</div>
+        <div class="btn btn-pricing" id="login-show">申し込む</div>
       </div>
 
       <div class="cource cource2">
@@ -191,7 +215,7 @@
             <li>オフィスでの質問：◯</li>
           </ul>
         </div>
-        <div class="btn btn-pricing">申し込む</div>
+        <div class="btn btn-pricing" id="two-months">申し込む</div>
       </div>
     </div><!--end.select-cource-->
 

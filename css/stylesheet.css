@@ -677,7 +677,7 @@ footer{
   cursor: pointer;
 }
 
-#signup-form textarea{
+#signup-form textarea, #login-form textarea{
   border: 1px solid #d0d5d8;
   border-radius: 5px;
   background-color: white;
@@ -685,7 +685,7 @@ footer{
   height:78px;
 }
 
-#signup-form select{
+#signup-form select, #login-form select{
   width:400px;
   height: 40px;
   margin-bottom: 15px;

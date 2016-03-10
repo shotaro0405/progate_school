@@ -58,13 +58,18 @@ $('.article').hover(function(){
     $('#login-modal').fadeIn();
   });
 
-  $('.signup-show').click(function() {
+  $('#signup-show').click(function() {
     $('#signup-modal').fadeIn();
+  });
+
+  $('#two-months').click(function() {
+    $('#two-months-modal').fadeIn();
   });
 
   $('.close-modal').click(function() {
     $('#login-modal').fadeOut();
     $('#signup-modal').fadeOut();
+    $('#two-months-modal').fadeOut();
   });
 
 });
